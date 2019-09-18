@@ -11,6 +11,8 @@ int rwhlx = 25;
 int ycrlin = 4;
 int xcrlin1= 0;
 int xcrlin2 = 18;
+int xwndshld = -1000;
+int ywndshld = 1000;
 
 
 float rid = 0;
@@ -76,7 +78,8 @@ void draw() {
   ellipse(xPos+rwhlx, yPos+ywhl,10,10); //rear wheel
   rect(xPos + xcrlin1,yPos-ycrlin, 2,5); //line 1
   rect(xPos+xcrlin2,yPos-ycrlin, 2,5);   //line 2
-  
+  fill(255);
+  rect(xPos+xwndshld,yPos-ywndshld,18,5);
   
 }
 
@@ -96,6 +99,8 @@ void keyPressed() {
     xcrlin1 = -1000;
     xcrlin2= -1000;
     ycrlin = -1000;
+    xwndshld = 1;
+    ywndshld = 22;
   }
   if (key == 's') {
     down = true;
@@ -106,6 +111,8 @@ void keyPressed() {
     xcrlin1 = -1000;
     xcrlin2= -1000;
     ycrlin = -1000;
+    xwndshld = 1;
+    ywndshld = 9;
   }
   if (key == 'p') {
     fast = true;
@@ -131,6 +138,8 @@ void keyReleased() {
     xcrlin1 = 0;
     xcrlin2 = 18;
     ycrlin = 4;
+    xwndshld = -1000;
+    ywndshld = 1102;
   }
   if (key == 's'){
     down = false;
@@ -141,6 +150,8 @@ void keyReleased() {
     xcrlin1 = 0;
     xcrlin2 = 18;
     ycrlin = 4;
+    xwndshld = -1111;
+    ywndshld = 1000;
   } 
   if (key == 'p'){
     fast = false;
