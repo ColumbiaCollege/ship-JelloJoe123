@@ -99,14 +99,14 @@ void keyPressed() {
   if (key == 'd'){        // if d is pressed, it will move right
     right = true;
   }
-  if (key == 'w') {        // if w is pressed, it will move up and the car will look different
+  if (key == 'w') {      // if w is pressed, it will move up and the car will look different
     up = true;
-    bodcrx = 20;           //when w is pressed, x length of the car body becomes 20
-    bodcry = -30;          //when w is pressed, y length of the car body becomes 30
-    lwhlx =  -1000;        // left wheel goes off screen
-    rwhlx = -1000;          // right wheel goes off screen
-    xcrlin1 = -1000;       // line 1 goes off screen
-    xcrlin2= -1000;       // line 2 goes off screen
+    bodcrx = 20;         //when w is pressed, x length of the car body becomes 20
+    bodcry = -30;        //when w is pressed, y length of the car body becomes 30
+    lwhlx =  -1000;      // left wheel goes off screen
+    rwhlx = -1000;       // right wheel goes off screen
+    xcrlin1 = -1000;     // line 1 goes off screen
+    xcrlin2= -1000;      // line 2 goes off screen
     ycrlin = -1000;
     xwndshld = 1;       // windshield x pos goes to 1
     ywndshld = 22;      //windshield y pos goes to 22
@@ -128,12 +128,12 @@ void keyPressed() {
     ycrlin = -1000;
     xwndshld = 1;       //windshield x pos goes to 1
     ywndshld = 11;      //windshield y pos goes to 11
-    xupwhl1 = 0;
-    yupwhl1 = -6;
-    rxupwhl1 = 20;
-    yupwhl2 = -23;
-    xupwhl2 = 20;
-    tpcrsz = -9;
+    xupwhl1 = 0;        //x wheel pos goes to 0
+    yupwhl1 = -6;       // whl 1 moves to y = -6 from pos
+    rxupwhl1 = 20;      // whl 1 moves to x = 20 from pos
+    yupwhl2 = -23;      // wheel 2 moves up 23
+    xupwhl2 = 20;       // wheel 2 moves right 20
+    tpcrsz = -9;        // top of the car shrinks
   }
   if (key == 'p') {      // if p is pressed, it will go faster
     fast = true;
